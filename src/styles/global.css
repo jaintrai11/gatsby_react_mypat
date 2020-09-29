@@ -1,0 +1,3060 @@
+@import "bootstrap.css";
+
+/* style.css */
+
+:root {
+    --brand-color: #1d7dea;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.8)!important;
+}
+
+.modal-content {
+    box-shadow: none;
+}
+
+app-question-card .question-image,
+app-question-card .width-three,
+app-question-card .question-image,
+app-question-card .width-three,
+app-single-question-card .question-image,
+app-single-question-card .width-three,
+app-answer-card .question-image,
+app-question-card-content .question-image img {
+    max-width: 100%;
+    height: auto;
+    min-width: auto;
+}
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700,900'); */
+
+html {
+    position: relative;
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font: normal 16px/24px "Nunito", sans-serif;
+    color: #4a4a4a;
+    background: #fff;
+    padding-right: 0!important;
+    scroll-behavior: smooth;
+}
+
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+a:hover,
+a.active,
+button:hover,
+button {
+    transition: all ease-in 0.3s;
+    text-decoration: none;
+    color: #000;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.over-hidden {
+    overflow: visible;
+}
+
+
+/* You can add global styles to this file, and also import other style files */
+
+.white-btn {
+    background: #fff;
+    border: solid 1px #5baed7;
+    padding: 8px 28px;
+    color: #5baed7;
+    font-size: 13px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.white-btn:hover {
+    /*background:#fff; border:solid 1px #333;*/
+    background: #5baed7;
+    border: 1px solid #5baed7;
+    padding: 8px 28px;
+    color: #fff !important;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.white-btn.act {
+    background: #5baed7;
+    color: #fff;
+}
+
+.white-btn em {
+    display: none;
+}
+
+.white-btn.read-done {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #5baed7;
+    color: #fff;
+}
+
+.white-btn.read-done em {
+    text-align: center;
+    width: 23px;
+    height: 23px;
+    border: solid 1px #fff;
+    border-radius: 100%;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.white-btn.read-done em i.fa-check {
+    margin-right: -1px;
+    color: #fff;
+}
+
+.btn-blue-default,
+.btn-blue-default:hover,
+.btn-blue-default:focus,
+.btn-blue-default:active {
+    padding: 10px 15px;
+    background: #50a8df;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0 0 12px 0;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a.btn-blue,
+button.btn-blue {
+    background: #1D7DEA;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    padding: 7px 35px;
+    border: solid 1px #1D7DEA;
+}
+
+a.btn-blue:hover,
+button.btn-blue:hover,
+a.btn-blue:focus,
+button.btn-blue:focus,
+a.btn-blue:active,
+button.btn-blue:active {
+    background: #1D7DEA;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    padding: 7px 35px;
+    border: solid 1px #1D7DEA;
+}
+
+.curser {
+    cursor: pointer;
+}
+
+.curser-defualt {
+    cursor: default;
+}
+
+
+/* Base for label styling */
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+
+/* flag for inetrnational login  */
+
+.Nepal {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -6px -6px;
+    margin-right: 10px;
+}
+
+.SaudiArabia {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -31px -5px;
+    margin-right: 10px;
+}
+
+.Malaysia {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -59px -5px;
+    margin-right: 10px;
+}
+
+.UnitedArabEmirates {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -5px -26px;
+    margin-right: 10px;
+}
+
+.Myanmar {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -32px -25px;
+    margin-right: 10px;
+}
+
+.SriLanka {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -60px -26px;
+    margin-right: 10px;
+}
+
+.Kuwait {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -7px -50px;
+    margin-right: 10px;
+}
+
+.Oman {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -31px -44px;
+    margin-right: 10px;
+}
+
+.Singapore {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -60px -41px;
+    margin-right: 10px;
+}
+
+.Bahrain {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -6px -62px;
+    margin-right: 10px;
+}
+
+.Qatar {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -30px -61px;
+    margin-right: 10px;
+}
+
+.SouthAfrica {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -59px -61px;
+    margin-right: 10px;
+}
+
+.India {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -6px -81px;
+    margin-right: 10px;
+}
+
+
+/* .rel{position: relative; width: 400px; height: 20px;}
+  body{margin: 150px;}
+  li{padding: 6px 10px; border-bottom: 1px solid #ccc; cursor: pointer; font-size: 16px; text-transform: capitalize;} */
+
+.bg-img-new {
+    background-image: url(https://s3-us-west-2.amazonaws.com/mypat-v2-prod/web/flags_psd-new2.jpg);
+}
+
+.flag-wrp {
+    float: left;
+    cursor: pointer;
+}
+
+
+/* flag for inetrnational login  ends */
+
+
+/* countrycode for number input */
+
+.form-control:focus {
+    border-color: rgba(153, 153, 153, 0.6);
+    box-shadow: inherit;
+}
+
+.crtn {
+    padding-left: 60px !important;
+    padding-right: 15px !important;
+    position: relative;
+}
+
+.countrycode {
+    position: absolute;
+    top: 12px;
+    z-index: 3;
+    cursor: pointer;
+    left: 10px;
+}
+
+.countrycode .img-flag {
+    width: 24px;
+    height: 12px;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+.countrycode .caret {
+    vertical-align: top;
+    margin-top: 8px;
+}
+
+.countrycode .bg-img-new {
+    margin-right: 5px;
+}
+
+.img-flag-list {
+    width: 24px;
+    height: 12px;
+    float: left;
+    margin-top: 4px;
+}
+
+.country-name {
+    float: left;
+    vertical-align: top;
+    font-size: 15px;
+    margin-left: 10px;
+    color: #000;
+}
+
+.crtn~.dropdown-menu li {
+    padding: 2px 10px;
+    float: left;
+    width: 100%;
+}
+
+.scrl-list {
+    max-height: 124px;
+    overflow-y: auto;
+}
+
+.rel {
+    position: relative;
+}
+
+
+/* end */
+
+
+/* product componets */
+
+.product-box [type="checkbox"]:not(:checked),
+.product-box [type="checkbox"]:checked {
+    position: absolute;
+    left: auto;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 6;
+    cursor: pointer;
+}
+
+
+/* end */
+
+
+/* login fiitjee popup */
+
+.ero-fitjlogin {
+    margin-bottom: 0px;
+}
+
+
+/* end */
+
+.ng2-pdf-viewer-container {
+    display: inline-block;
+    text-align: center;
+}
+
+[type="checkbox"]:not(:checked)+label,
+[type="checkbox"]:checked+label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer;
+}
+
+
+/* checkbox aspect */
+
+[type="checkbox"]:not(:checked)+label:before,
+[type="checkbox"]:checked+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 1.25em;
+    height: 1.25em;
+    border: 1px solid #5baed7;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1);
+}
+
+
+/* checked mark aspect */
+
+[type="checkbox"]:not(:checked)+label:after,
+[type="checkbox"]:checked+label:after {
+    content: '✔';
+    position: absolute;
+    top: 2px;
+    left: .2em;
+    font-size: 1.3em;
+    line-height: 0.8;
+    color: #5baed7;
+    transition: all .2s;
+}
+
+
+/* checked mark aspect changes */
+
+[type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+[type="checkbox"]:checked+label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* disabled checkbox */
+
+[type="checkbox"]:disabled:not(:checked)+label:before,
+[type="checkbox"]:disabled:checked+label:before {
+    box-shadow: none;
+    border-color: #5baed7;
+    background-color: #ddd;
+}
+
+[type="checkbox"]:disabled:checked+label:after {
+    color: #999;
+}
+
+[type="checkbox"]:disabled+label {
+    color: #aaa;
+}
+
+
+/* accessibility */
+
+[type="checkbox"]:checked:focus+label:before,
+[type="checkbox"]:not(:checked):focus+label:before {
+    border: 1px dotted #5baed7;
+}
+
+
+/* hover style just for information */
+
+
+/* label:hover:before {
+border: 2px solid #808080!important;
+} */
+
+.opacity-enable::before {
+    content: ' ';
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    height: 76px;
+    width: 100%;
+}
+
+.control {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: #5baed7;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control__indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border: solid 1px #5baed7;
+    border-radius: 3px;
+}
+
+.control:hover input~.control__indicator,
+.control input:focus~.control__indicator {
+    background: #fff;
+}
+
+.control input:checked~.control__indicator {
+    background: #5baed7;
+}
+
+.control:hover input:not([disabled]):checked~.control__indicator,
+.control input:checked:focus~.control__indicator {
+    background: #5baed7;
+}
+
+.control input:disabled~.control__indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.control__indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.control input:checked~.control__indicator:after {
+    display: block;
+}
+
+.control--checkbox .control__indicator:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.control--checkbox input:disabled~.control__indicator:after {
+    border-color: #7b7b7b;
+}
+
+.derivations {
+    display: block;
+}
+
+.derivations a {
+    float: right;
+    color: #5baed7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dropdown-menu>li {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 8px 10px;
+    cursor: pointer
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.banner_wrp::before {
+    content: '';
+    background: #000;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    opacity: 0.5;
+    z-index: 0;
+    top: 0;
+    height: 100%;
+}
+
+
+/* JKM CSS START*/
+
+.grey-bg {
+    background: rgba(80, 168, 223, 0.1);
+}
+
+.colr-grey {
+    color: #a5a5a5;
+}
+
+.content-bg-head {
+    padding: 40px 0 30px 0;
+}
+
+.page-head-shodler {
+    padding-top: 10px;
+    color: #4a4a4a;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+/* padding and margain comman */
+
+.pad-tp-10 {
+    padding-top: 10px!important;
+}
+
+.pad-btm-10 {
+    padding-bottom: 10px!important;
+}
+
+.pad-lt-10 {
+    padding-left: 10px!important;
+}
+
+.pad-rt-10 {
+    padding-right: 10px!important;
+}
+
+.pad-tp-20 {
+    padding-top: 20px!important;
+}
+
+.pad-btm-20 {
+    padding-bottom: 20px!important;
+}
+
+.pad-lt-20 {
+    padding-left: 20px!important;
+}
+
+.pad-rt-20 {
+    padding-right: 20px!important;
+}
+
+.mrg-btm-0 {
+    margin-bottom: 0px!important;
+}
+
+.mrg-tp-5 {
+    margin-top: 5px!important;
+}
+
+.mrg-btm-5 {
+    margin-bottom: 5px!important;
+}
+
+.mrg-lt-5 {
+    margin-left: 5px!important;
+}
+
+.mrg-rt-5 {
+    margin-right: 5px!important;
+}
+
+.mrg-tp-10 {
+    margin-top: 10px!important;
+}
+
+.mrg-btm-10 {
+    margin-bottom: 10px!important;
+}
+
+.mrg-lt-10 {
+    margin-left: 10px!important;
+}
+
+.mrg-rt-10 {
+    margin-right: 10px!important;
+}
+
+.mrg-tp-20 {
+    margin-top: 20px!important;
+}
+
+.mrg-btm-20 {
+    margin-bottom: 20px!important;
+}
+
+.mrg-lt-20 {
+    margin-left: 20px!important;
+}
+
+.mrg-rt-20 {
+    margin-right: 20px!important;
+}
+
+.mrg-btm-30 {
+    margin-bottom: 30px!important;
+}
+
+.mrg-tp-30 {
+    margin-top: 30px!important;
+}
+
+.font-sz-12 {
+    font-size: 12px;
+}
+
+.font-sz-14 {
+    font-size: 14px;
+}
+
+.font-sz-16 {
+    font-size: 16px;
+}
+
+.font-sz-18 {
+    font-size: 18px;
+}
+
+.font-sz-20 {
+    font-size: 20px;
+}
+
+.font-sz-24 {
+    font-size: 24px;
+}
+
+.colr-grey {
+    color: #a5a5a5;
+}
+
+.rel {
+    position: relative;
+}
+
+.fulldiv {
+    width: 100%;
+    float: left;
+}
+
+.overfhide {
+    overflow: hidden;
+}
+
+.tags {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    padding: 0px 5px;
+    margin-right: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu {
+    min-width: 100%;
+}
+
+.rel {
+    position: relative;
+}
+
+.dropdown-menu-custom::before {
+    border: none !important;
+}
+
+.dropdown-menu-custom {
+    padding: 0px;
+}
+
+.dropdown-menu-custom li {
+    padding: 0px !important;
+}
+
+.dropdown-menu-custom li a {
+    padding: 7px 15px;
+}
+
+.dropdown-menu-custom li a:hover {
+    background: none;
+}
+
+.nice-select:after {
+    border-bottom: 2px solid #999;
+    border-right: 2px solid #999;
+    height: 8px;
+    margin-top: -4px;
+    width: 8px;
+}
+
+.nice-select {
+    height: 32px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.nice-select .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 32px;
+    list-style: none;
+    min-height: 32px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    border-bottom: solid 1px #ddd;
+    text-transform: none;
+}
+
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+    background-color: #f6f6f6;
+}
+
+.nice-select .option.selected {
+    font-weight: bold;
+    position: relative;
+}
+
+.nice-select .option.selected::after {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    border-radius: 100%;
+    z-index: 9;
+    content: "\f058";
+    text-align: center;
+    line-height: 15px;
+    font-family: FontAwesome;
+    color: #b8e986;
+    font-size: 16px;
+}
+
+.wide-select-none.nice-select .option.selected::after {
+    display: none;
+}
+
+.nice-select .option.disabled {
+    background-color: transparent;
+    color: #999;
+    cursor: default;
+}
+
+.no-csspointerevents .nice-select .list {
+    display: none;
+}
+
+.no-csspointerevents .nice-select.open .list {
+    display: block;
+}
+
+
+/* placeholder css for loader */
+
+@keyframes placeHolderShimmer {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+.background-masker {
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: placeHolderShimmer;
+    background: #f2f2f2;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 1000px 104px;
+}
+
+@media only screen and (min-width:768px) {
+    .d-stick {
+        position: sticky;
+        top: 135px;
+        min-height: 850px;
+    }
+}
+
+
+/* loader end */
+
+
+/*************Result Analysis Revamp *********/
+
+h2.result-heading {
+    display: block;
+    padding: 35px 0 25px 0;
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+    text-transform: uppercase;
+    height: 92px;
+}
+
+.mar-top-set {
+    margin-top: 110px
+}
+
+
+/*************Result Analysis Revamp *********/
+
+
+/* JKM CSS END */
+
+
+/*mobile screen portrait fixed*/
+
+@media only screen and (max-width:320px) {
+    .fiter-btn-wrp .fs-wrap {
+        width: 100%;
+    }
+}
+
+
+/*END coustom dropdown for college prodictor*/
+
+
+/* tabs style link css starts here */
+
+.tabs-style {
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+}
+
+.tabs-style a {
+    background: #fff;
+    border: solid 1px #dcdcdc;
+    color: #a5a5a5;
+    padding: 8px 35px;
+    margin: 0 !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tabs-style a.active,
+.tabs-style a:hover {
+    background: #24afd5;
+    color: #fff;
+    border: solid 1px #24afd5;
+}
+
+.tabs-style a:nth-child(1) {
+    border-radius: 5px 0 0 5px;
+}
+
+.tabs-style a:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+
+/* tabs style link css ends here */
+
+
+/* chart labels css start here */
+
+.chart-labels {
+    padding: 0 0 30px 0;
+}
+
+.chart-labels a {
+    display: inline-block;
+    color: #6b5959;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.chart-labels a i {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+.chart-labels a i.yellow {
+    color: #f3e700;
+}
+
+.chart-labels a i.blue {
+    color: #6291e4;
+}
+
+.chart-labels a i.green {
+    color: #93d000;
+}
+
+
+/* chart labels css end here */
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+
+/*** alert custom css ****/
+
+.alert-danger {
+    font-size: 12px;
+    font-weight: bold;
+    color: #dc5263;
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+.alert-success {
+    font-size: 12px;
+    font-weight: bold;
+    color: #32CD32;
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+
+/*** alert custom css ****/
+
+.ui-widget-header {
+    background: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+/********Modal vertical center align as per requirement of QA.*******/
+
+.modal-dialog {
+    margin: 5% auto 0 auto;
+}
+
+.bg-white {
+    background: #fff !important;
+}
+
+.image-cropper input[type=file] {
+    padding: 10px 17px 10px 57px;
+    background: #50a8df;
+    border-radius: 4px;
+    margin: 0 0 12px 0;
+    color: #fff;
+}
+
+.image-cropper img {
+    width: 50px;
+    height: 50px;
+}
+
+#pic-uploader .modal-dialog .modal-title {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 766px) {
+    .opacity-enable::before {
+        height: 58px;
+    }
+    h2.result-heading {
+        padding: 60px 0 5px;
+    }
+}
+
+@media (min-width:767px) and (max-width:768px) {
+    .opacity-enable::before {
+        height: 87px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .image-cropper input[type=file] {
+        padding: 10px;
+        background: #50a8df;
+        border-radius: 4px;
+        margin: 0 0 12px 0;
+        color: #fff;
+    }
+    #pic-uploader .image-cropper canvas {
+        width: 100%;
+    }
+    .modal-body #uploadform img {
+        width: 50px !important;
+        height: auto !important;
+    }
+}
+
+@media (min-width:320px) and (max-width:325px) {
+    #uploadform canvas {
+        width: auto !important;
+        height: 180px !important;
+        overflow: hidden;
+    }
+}
+
+
+/*****************equation css modified conflicts of span tag css and editor and input area differ from main css of span tags generated by editor**************/
+
+.mq-math-mode .mq-empty {
+    background: #fff;
+    border: dotted 1px #333;
+}
+
+.matheditor-btn-span {
+    width: 60px;
+    height: 50px;
+}
+
+.tab-content-me .matheditor-btn-span span {
+    font-size: 14px;
+}
+
+.tab-content-me:nth-child(2) .matheditor-btn-span span {
+    font-size: 14px;
+}
+
+.mq-math-mode * {
+    font-size: 16px;
+}
+
+.cke_dialog_ui_html .mq-empty {
+    border: 0;
+}
+
+.cke_dialog_ui_html.mq-editable-field .mq-non-leaf tr td {
+    border: dotted 1px #333;
+    padding: 2px;
+}
+
+.mq-non-leaf td.mq-hasCursor span.mq-cursor {
+    line-height: 10px !important;
+}
+
+.cke_dialog_ui_html span span span.mq-scaled.mq-paren {
+    line-height: auto !important;
+}
+
+img:focus {
+    border: 0 !important;
+}
+
+div[contenteditable="true"] p img:focus,
+div[contenteditable="true"] p img:hover,
+div[contenteditable="true"] p img:active {
+    height: 20px !important;
+}
+
+
+/***************************edited*******************************/
+
+#tab-1-questionA .mq-fraction.mq-non-leaf {
+    line-height: 14px;
+}
+
+#tab-1-questionA .mq-math-mode .mq-paren {
+    vertical-align: baseline;
+    line-height: 30px;
+}
+
+#tab-7-questionA .mq-math-mode .mq-non-leaf,
+#tab-7-questionA .mq-math-mode .mq-scaled {
+    display: inline;
+}
+
+#tab-7-questionA .matheditor-btn-span span {
+    font-size: 28px;
+    line-height: 41px;
+}
+
+#tab-7-questionA .mq-math-mode .mq-non-leaf {
+    display: inline-block;
+}
+
+#tab-7-questionA table.mq-non-leaf {
+    line-height: 7px;
+}
+
+#tab-7-questionA .matheditor-btn-span {
+    width: 65px;
+    height: 50px;
+}
+
+#tab-1-questionA .matheditor-btn-span span {
+    line-height: 20px;
+}
+
+#tab-1-questionA .mq-math-mode .mq-paren {
+    line-height: 7px;
+}
+
+#tab-10-questionA .tab-content-me:last-child.current span.op-btn-icon.mq-math-mode span span {
+    font-size: 14px;
+}
+
+#tab-10-questionA span.op-btn-icon.mq-math-mode span span {
+    font-size: 14px;
+}
+
+#tab-7-questionA td.mq-hasCursor {
+    border: dotted 1px #333;
+}
+
+
+/* .question_inner p p{display: inline !important;} */
+
+.banner-wrp-new {
+    top: 35px !important;
+}
+
+
+/* style.css */
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700,900'); */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font: normal 16px/24px "Nunito", sans-serif;
+    color: #4a4a4a;
+    background: #fff;
+    padding-right: 0!important
+}
+
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+a:hover,
+a.active,
+button:hover,
+button {
+    transition: all ease-in 0.3s;
+    text-decoration: none;
+    color: #000;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.over-hidden {
+    overflow: visible;
+}
+
+
+/* You can add global styles to this file, and also import other style files */
+
+.white-btn {
+    background: #fff;
+    border: solid 1px #1D7DEA;
+    padding: 8px 28px;
+    color: #1D7DEA;
+    font-size: 13px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.white-btn:hover {
+    /*background:#fff; border:solid 1px #333;*/
+    background: #5baed7;
+    border: 1px solid #5baed7;
+    padding: 8px 28px;
+    color: #fff !important;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.white-btn.act {
+    background: #1D7DEA;
+    color: #fff;
+}
+
+.white-btn em {
+    display: none;
+}
+
+.white-btn.read-done {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #1D7DEA;
+    color: #fff;
+}
+
+.white-btn.read-done em {
+    text-align: center;
+    width: 23px;
+    height: 23px;
+    border: solid 1px #fff;
+    border-radius: 100%;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.white-btn.read-done em i.fa-check {
+    margin-right: -1px;
+    color: #fff;
+}
+
+.btn-blue-default,
+.btn-blue-default:hover,
+.btn-blue-default:focus,
+.btn-blue-default:active {
+    padding: 10px 15px;
+    background: #1D7DEA;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0 0 12px 0;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a.btn-blue,
+button.btn-blue {
+    background: #1D7DEA;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    padding: 7px 35px;
+    border: solid 1px #1D7DEA;
+}
+
+a.btn-blue:hover,
+button.btn-blue:hover,
+a.btn-blue:focus,
+button.btn-blue:focus,
+a.btn-blue:active,
+button.btn-blue:active {
+    background: #4a8cad;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    padding: 7px 35px;
+    border: solid 1px #4a8cad;
+}
+
+.curser {
+    cursor: pointer;
+}
+
+.curser-defualt {
+    cursor: default;
+}
+
+
+/* Base for label styling */
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+
+/* flag for inetrnational login  */
+
+.Nepal {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -6px -6px;
+    margin-right: 10px;
+}
+
+.SaudiArabia {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -31px -5px;
+    margin-right: 10px;
+}
+
+.Malaysia {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -59px -5px;
+    margin-right: 10px;
+}
+
+.UnitedArabEmirates {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -5px -26px;
+    margin-right: 10px;
+}
+
+.Myanmar {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -32px -25px;
+    margin-right: 10px;
+}
+
+.SriLanka {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -60px -26px;
+    margin-right: 10px;
+}
+
+.Kuwait {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -7px -50px;
+    margin-right: 10px;
+}
+
+.Oman {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -31px -44px;
+    margin-right: 10px;
+}
+
+.Singapore {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -60px -41px;
+    margin-right: 10px;
+}
+
+.Bahrain {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -6px -62px;
+    margin-right: 10px;
+}
+
+.Qatar {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -30px -61px;
+    margin-right: 10px;
+}
+
+.SouthAfrica {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -59px -61px;
+    margin-right: 10px;
+}
+
+.India {
+    width: 24px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    background-position: -6px -81px;
+    margin-right: 10px;
+}
+
+
+/* .rel{position: relative; width: 400px; height: 20px;}
+  body{margin: 150px;}
+  li{padding: 6px 10px; border-bottom: 1px solid #ccc; cursor: pointer; font-size: 16px; text-transform: capitalize;} */
+
+.bg-img-new {
+    background-image: url(https://s3-us-west-2.amazonaws.com/mypat-v2-prod/web/flags_psd-new2.jpg);
+}
+
+.flag-wrp {
+    float: left;
+    cursor: pointer;
+}
+
+
+/* flag for inetrnational login  ends */
+
+
+/* countrycode for number input */
+
+.crtn {
+    padding-left: 60px !important;
+    padding-right: 15px !important;
+    position: relative;
+}
+
+.countrycode {
+    position: absolute;
+    top: 12px;
+    z-index: 3;
+    cursor: pointer;
+    left: 10px;
+}
+
+.countrycode .img-flag {
+    width: 24px;
+    height: 12px;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+.countrycode .caret {
+    vertical-align: top;
+    margin-top: 8px;
+}
+
+.countrycode .bg-img-new {
+    margin-right: 5px;
+}
+
+.img-flag-list {
+    width: 24px;
+    height: 12px;
+    float: left;
+    margin-top: 4px;
+}
+
+.country-name {
+    float: left;
+    vertical-align: top;
+    font-size: 15px;
+    margin-left: 10px;
+    color: #000;
+}
+
+.crtn~.dropdown-menu li {
+    padding: 2px 10px;
+    float: left;
+    width: 100%;
+}
+
+.scrl-list {
+    max-height: 124px;
+    overflow-y: auto;
+}
+
+.rel {
+    position: relative;
+}
+
+
+/* end */
+
+
+/* product componets */
+
+.product-box [type="checkbox"]:not(:checked),
+.product-box [type="checkbox"]:checked {
+    position: absolute;
+    left: auto;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 6;
+    cursor: pointer;
+}
+
+
+/* end */
+
+
+/* login fiitjee popup */
+
+.ero-fitjlogin {
+    margin-bottom: 0px;
+}
+
+
+/* end */
+
+[type="checkbox"]:not(:checked)+label,
+[type="checkbox"]:checked+label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer;
+}
+
+
+/* checkbox aspect */
+
+[type="checkbox"]:not(:checked)+label:before,
+[type="checkbox"]:checked+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 1.25em;
+    height: 1.25em;
+    border: 1px solid #5baed7;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1);
+}
+
+
+/* checked mark aspect */
+
+[type="checkbox"]:not(:checked)+label:after,
+[type="checkbox"]:checked+label:after {
+    content: '✔';
+    position: absolute;
+    top: 2px;
+    left: .2em;
+    font-size: 1.3em;
+    line-height: 0.8;
+    color: #5baed7;
+    transition: all .2s;
+}
+
+
+/* checked mark aspect changes */
+
+[type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+[type="checkbox"]:checked+label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* disabled checkbox */
+
+[type="checkbox"]:disabled:not(:checked)+label:before,
+[type="checkbox"]:disabled:checked+label:before {
+    box-shadow: none;
+    border-color: #5baed7;
+    background-color: #ddd;
+}
+
+[type="checkbox"]:disabled:checked+label:after {
+    color: #999;
+}
+
+[type="checkbox"]:disabled+label {
+    color: #aaa;
+}
+
+
+/* accessibility */
+
+[type="checkbox"]:checked:focus+label:before,
+[type="checkbox"]:not(:checked):focus+label:before {
+    border: 1px dotted #5baed7;
+}
+
+
+/* hover style just for information */
+
+
+/* label:hover:before {
+border: 2px solid #808080!important;
+} */
+
+.opacity-enable::before {
+    content: ' ';
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    height: 76px;
+    width: 100%;
+}
+
+.control {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: #5baed7;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control__indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border: solid 1px #5baed7;
+    border-radius: 3px;
+}
+
+.control:hover input~.control__indicator,
+.control input:focus~.control__indicator {
+    background: #fff;
+}
+
+.control input:checked~.control__indicator {
+    background: #5baed7;
+}
+
+.control:hover input:not([disabled]):checked~.control__indicator,
+.control input:checked:focus~.control__indicator {
+    background: #5baed7;
+}
+
+.control input:disabled~.control__indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.control__indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.control input:checked~.control__indicator:after {
+    display: block;
+}
+
+.control--checkbox .control__indicator:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.control--checkbox input:disabled~.control__indicator:after {
+    border-color: #7b7b7b;
+}
+
+.derivations {
+    display: block;
+}
+
+.derivations a {
+    float: right;
+    color: #5baed7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dropdown-menu>li {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 8px 10px;
+    cursor: pointer
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.banner_wrp::before {
+    content: '';
+    background: #000;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    opacity: 0.5;
+    z-index: 0;
+    top: 0;
+    height: 100%;
+}
+
+
+/* JKM CSS START*/
+
+.grey-bg {
+    background: rgba(80, 168, 223, 0.1);
+}
+
+.colr-grey {
+    color: #a5a5a5;
+}
+
+.content-bg-head {
+    padding: 40px 0 30px 0;
+}
+
+.page-head-shodler {
+    padding-top: 10px;
+    color: #4a4a4a;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+/* padding and margain comman */
+
+.pad-tp-10 {
+    padding-top: 10px!important;
+}
+
+.pad-btm-10 {
+    padding-bottom: 10px!important;
+}
+
+.pad-lt-10 {
+    padding-left: 10px!important;
+}
+
+.pad-rt-10 {
+    padding-right: 10px!important;
+}
+
+.pad-tp-20 {
+    padding-top: 20px!important;
+}
+
+.pad-btm-20 {
+    padding-bottom: 20px!important;
+}
+
+.pad-lt-20 {
+    padding-left: 20px!important;
+}
+
+.pad-rt-20 {
+    padding-right: 20px!important;
+}
+
+.mrg-btm-0 {
+    margin-bottom: 0px!important;
+}
+
+.mrg-tp-5 {
+    margin-top: 5px!important;
+}
+
+.mrg-btm-5 {
+    margin-bottom: 5px!important;
+}
+
+.mrg-lt-5 {
+    margin-left: 5px!important;
+}
+
+.mrg-rt-5 {
+    margin-right: 5px!important;
+}
+
+.mrg-tp-10 {
+    margin-top: 10px!important;
+}
+
+.mrg-btm-10 {
+    margin-bottom: 10px!important;
+}
+
+.mrg-lt-10 {
+    margin-left: 10px!important;
+}
+
+.mrg-rt-10 {
+    margin-right: 10px!important;
+}
+
+.mrg-tp-20 {
+    margin-top: 20px!important;
+}
+
+.mrg-btm-20 {
+    margin-bottom: 20px!important;
+}
+
+.mrg-lt-20 {
+    margin-left: 20px!important;
+}
+
+.mrg-rt-20 {
+    margin-right: 20px!important;
+}
+
+.mrg-btm-30 {
+    margin-bottom: 30px!important;
+}
+
+.mrg-tp-30 {
+    margin-top: 30px!important;
+}
+
+.font-sz-12 {
+    font-size: 12px;
+}
+
+.font-sz-14 {
+    font-size: 14px;
+}
+
+.font-sz-16 {
+    font-size: 16px;
+}
+
+.font-sz-18 {
+    font-size: 18px;
+}
+
+.font-sz-20 {
+    font-size: 20px;
+}
+
+.font-sz-24 {
+    font-size: 24px;
+}
+
+.colr-grey {
+    color: #a5a5a5;
+}
+
+.rel {
+    position: relative;
+}
+
+.fulldiv {
+    width: 100%;
+    float: left;
+}
+
+.overfhide {
+    overflow: hidden;
+}
+
+.tags {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    padding: 0px 5px;
+    margin-right: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu {
+    min-width: 100%;
+}
+
+.rel {
+    position: relative;
+}
+
+.dropdown-menu-custom::before {
+    border: none !important;
+}
+
+.dropdown-menu-custom {
+    padding: 0px;
+}
+
+.dropdown-menu-custom li {
+    padding: 0px !important;
+}
+
+.dropdown-menu-custom li a {
+    padding: 7px 15px;
+}
+
+.dropdown-menu-custom li a:hover {
+    background: none;
+}
+
+.nice-select:after {
+    border-bottom: 2px solid #999;
+    border-right: 2px solid #999;
+    height: 8px;
+    margin-top: -4px;
+    width: 8px;
+}
+
+.nice-select {
+    height: 32px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.nice-select .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 32px;
+    list-style: none;
+    min-height: 32px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    border-bottom: solid 1px #ddd;
+    text-transform: none;
+}
+
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+    background-color: #f6f6f6;
+}
+
+.nice-select .option.selected {
+    font-weight: bold;
+    position: relative;
+}
+
+.nice-select .option.selected::after {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    border-radius: 100%;
+    z-index: 9;
+    content: "\f058";
+    text-align: center;
+    line-height: 15px;
+    font-family: FontAwesome;
+    color: #b8e986;
+    font-size: 16px;
+}
+
+.wide-select-none.nice-select .option.selected::after {
+    display: none;
+}
+
+.nice-select .option.disabled {
+    background-color: transparent;
+    color: #999;
+    cursor: default;
+}
+
+.no-csspointerevents .nice-select .list {
+    display: none;
+}
+
+.no-csspointerevents .nice-select.open .list {
+    display: block;
+}
+
+
+/* JKM CSS END */
+
+
+/*mobile screen portrait fixed*/
+
+@media only screen and (max-width:320px) {
+    .fiter-btn-wrp .fs-wrap {
+        width: 100%;
+    }
+}
+
+
+/*END coustom dropdown for college prodictor*/
+
+
+/* tabs style link css starts here */
+
+.tabs-style {
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+}
+
+.tabs-style a {
+    background: #fff;
+    border: solid 1px #dcdcdc;
+    color: #a5a5a5;
+    padding: 8px 35px;
+    margin: 0 !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tabs-style a.active,
+.tabs-style a:hover {
+    background: #24afd5;
+    color: #fff;
+    border: solid 1px #24afd5;
+}
+
+.tabs-style a:nth-child(1) {
+    border-radius: 5px 0 0 5px;
+}
+
+.tabs-style a:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+
+/* tabs style link css ends here */
+
+
+/* chart labels css start here */
+
+.chart-labels {
+    padding: 0 0 30px 0;
+}
+
+.chart-labels a {
+    display: inline-block;
+    color: #6b5959;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.chart-labels a i {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+.chart-labels a i.yellow {
+    color: #f3e700;
+}
+
+.chart-labels a i.blue {
+    color: #6291e4;
+}
+
+.chart-labels a i.green {
+    color: #93d000;
+}
+
+
+/* chart labels css end here */
+
+button:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+
+/*** alert custom css ****/
+
+.alert-danger {
+    font-size: 12px;
+    font-weight: bold;
+    color: #dc5263;
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+.alert-success {
+    font-size: 12px;
+    font-weight: bold;
+    color: #32CD32;
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+
+/*** alert custom css ****/
+
+.ui-widget-header {
+    background: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+/********Modal vertical center align as per requirement of QA.*******/
+
+.modal-dialog {
+    margin: 5% auto 0 auto;
+}
+
+.bg-white {
+    background: #fff !important;
+}
+
+.image-cropper input[type=file] {
+    padding: 10px 17px 10px 57px;
+    background: #50a8df;
+    border-radius: 4px;
+    margin: 0 0 12px 0;
+    color: #fff;
+}
+
+.image-cropper img {
+    width: 50px;
+    height: 50px;
+}
+
+#pic-uploader .modal-dialog .modal-title {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 766px) {
+    .opacity-enable::before {
+        height: 58px;
+    }
+}
+
+@media (min-width:767px) and (max-width:768px) {
+    .opacity-enable::before {
+        height: 87px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .image-cropper input[type=file] {
+        padding: 10px;
+        background: #50a8df;
+        border-radius: 4px;
+        margin: 0 0 12px 0;
+        color: #fff;
+    }
+    #pic-uploader .image-cropper canvas {
+        width: 100%;
+    }
+    .modal-body #uploadform img {
+        width: 50px !important;
+        height: auto !important;
+    }
+}
+
+@media (min-width:320px) and (max-width:325px) {
+    #uploadform canvas {
+        width: auto !important;
+        height: 180px !important;
+        overflow: hidden;
+    }
+    .intro-fixed-body {
+        overflow: visible;
+    }
+}
+
+
+/*****************equation css modified conflicts of span tag css and editor and input area differ from main css of span tags generated by editor**************/
+
+.mq-math-mode .mq-empty {
+    background: #fff;
+    border: dotted 1px #333;
+}
+
+.matheditor-btn-span {
+    width: 60px;
+    height: 50px;
+}
+
+.tab-content-me .matheditor-btn-span span {
+    font-size: 14px;
+}
+
+.tab-content-me:nth-child(2) .matheditor-btn-span span {
+    font-size: 14px;
+}
+
+.mq-math-mode * {
+    font-size: 16px;
+}
+
+.cke_dialog_ui_html .mq-empty {
+    border: 0;
+}
+
+.cke_dialog_ui_html.mq-editable-field .mq-non-leaf tr td {
+    border: dotted 1px #333;
+    padding: 2px;
+}
+
+.mq-non-leaf td.mq-hasCursor span.mq-cursor {
+    line-height: 10px !important;
+}
+
+.cke_dialog_ui_html span span span.mq-scaled.mq-paren {
+    line-height: auto !important;
+}
+
+img:focus {
+    border: 0 !important;
+}
+
+div[contenteditable="true"] p img:focus,
+div[contenteditable="true"] p img:hover,
+div[contenteditable="true"] p img:active {
+    height: 20px !important;
+}
+
+
+/***************************edited*******************************/
+
+#tab-1-questionA .mq-fraction.mq-non-leaf {
+    line-height: 14px;
+}
+
+#tab-1-questionA .mq-math-mode .mq-paren {
+    vertical-align: baseline;
+    line-height: 30px;
+}
+
+#tab-7-questionA .mq-math-mode .mq-non-leaf,
+#tab-7-questionA .mq-math-mode .mq-scaled {
+    display: inline;
+}
+
+#tab-7-questionA .matheditor-btn-span span {
+    font-size: 28px;
+    line-height: 41px;
+}
+
+#tab-7-questionA .mq-math-mode .mq-non-leaf {
+    display: inline-block;
+}
+
+#tab-7-questionA table.mq-non-leaf {
+    line-height: 7px;
+}
+
+#tab-7-questionA .matheditor-btn-span {
+    width: 65px;
+    height: 50px;
+}
+
+#tab-1-questionA .matheditor-btn-span span {
+    line-height: 20px;
+}
+
+#tab-1-questionA .mq-math-mode .mq-paren {
+    line-height: 7px;
+}
+
+#tab-10-questionA .tab-content-me:last-child.current span.op-btn-icon.mq-math-mode span span {
+    font-size: 14px;
+}
+
+#tab-10-questionA span.op-btn-icon.mq-math-mode span span {
+    font-size: 14px;
+}
+
+#tab-7-questionA td.mq-hasCursor {
+    border: dotted 1px #333;
+}
+
+
+/* .question_inner p p{display: inline !important;} */
+
+.banner-wrp-new {
+    top: 35px !important;
+}
+
+
+/* tour css start today*/
+
+.introjs-tooltip {
+    box-sizing: content-box;
+    position: absolute;
+    visibility: visible;
+    padding: 10px;
+    margin-top: -8px;
+    background-color: #ffffff;
+    min-width: 200px;
+    max-width: 300px;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .2);
+    /* box-shadow: 0px 2px 1px rgba(255, 255, 255, 0.8); */
+    transition: opacity .1s ease-out;
+}
+
+.introjs-skipbutton {
+    box-sizing: content-box;
+    margin-right: 5px;
+    background: #fff!important;
+    color: #4e9cdc!important;
+    background: #fff;
+    border: 1px solid #ccc!important;
+}
+
+.introjs-prevbutton {
+    border-radius: .2em 0 0 .2em;
+    border-right: none;
+}
+
+.introjs-nextbutton {
+    background: #4e9cdc;
+    border-radius: 0 .2em .2em 0;
+}
+
+.introjs-button {
+    box-sizing: content-box;
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+    padding: .3em .6em;
+    border: 1px solid #4e9cdc;
+    margin: 0;
+    text-decoration: none;
+    text-shadow: none;
+    font: 11px/normal sans-serif;
+    color: #fff;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: 0;
+    background-color: #4e9cdc;
+    background-image: linear-gradient(#4e9cdc, #4e9cdc);
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    -o-background-clip: padding-box;
+    border-radius: .2em;
+    zoom: 1;
+    margin: 10px 4px 0 4px;
+}
+
+.introjs-tooltipbuttons {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.introjs-bullets ul li a {
+    box-sizing: content-box;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #ccc;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.introjs-bullets ul li a.active {
+    background: #478ece;
+}
+
+.introjs-button:active,
+.introjs-button:focus {
+    background-image: linear-gradient(#4e9cdc, #4e9cdc);
+    border: 1px solid #4e9cdc;
+    color: #fff;
+}
+
+.introjs-disabled,
+.introjs-disabled:focus,
+.introjs-disabled:hover {
+    color: #9a9a9a!important;
+    border-color: #d4d4d4!important;
+    box-shadow: none;
+    cursor: default;
+    background-color: #f4f4f4;
+    background-image: none;
+    text-decoration: none;
+}
+
+.introjs-button:hover {
+    border: 1px solid #4e9cdc;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 1px 1px #e3e3e3;
+}
+
+.introjs-tooltiptext {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+
+/* old css for tour */
+
+
+/* tour */
+
+.introjs-overlay {
+    opacity: 0.35!important;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+/* .navbar-fixed-top.introjs-fixParent {z-index: 9!important;} */
+
+.introjs-helperNumberLayer {
+    background: #4e9cdc;
+    background: linear-gradient(to bottom, #4e9cdc 0, #4e9cdc 100%);
+}
+
+.introjs-helperLayer {
+    background-color: #000;
+    opacity: 0!important;
+    z-index: 9999999!important;
+}
+
+.introjs-button {
+    font-size: 14px!important;
+}
+
+
+/* dashboard color on tour */
+
+li#community.introjs-showElement a {
+    color: #000;
+    background: #fff;
+    border-radius: 100px;
+    line-height: 3px;
+    padding: 18px 14px;
+    margin-top: 17px;
+    margin-bottom: 5px;
+}
+
+li#changeGoal.introjs-showElement {
+    padding-bottom: 8px;
+}
+
+li#mytest.introjs-showElement a {
+    color: #000;
+    background: #fff;
+    border-radius: 100px;
+    line-height: 0px;
+    padding: 19px 14px 17px 14px;
+    margin-top: 17px;
+    margin-bottom: 5px;
+}
+
+li#mytest.introjs-showElement .dropdown-menu {
+    display: none!important;
+}
+
+li#assignment.introjs-showElement a {
+    color: #000;
+    background: #fff;
+    border-radius: 100px;
+    line-height: 3px;
+    padding: 20px 16px;
+    margin-top: 17px;
+    margin-bottom: 15px;
+}
+
+#goalProgress.introjs-showElement .header-dashbrd .category b {
+    color: #fff;
+}
+
+#goalProgress.introjs-showElement .header-dashbrd .clickopen .infoicon {
+    color: #fff;
+}
+
+#goalProgress.introjs-showElement .overlap_div_cont p b {
+    color: #000;
+}
+
+#performanceAnalytics.introjs-showElement .overlap_div_cont p b {
+    color: #000;
+}
+
+#performanceAnalytics.introjs-showElement .header-dashbrd .category b {
+    color: #fff;
+}
+
+#dashboardmytest.introjs-showElement {
+    clear: both;
+}
+
+#dashboardmytest.introjs-showElement .header-dashbrd .category b {
+    color: #fff;
+}
+
+
+/* end */
+
+
+/* my test color on tour */
+
+#attemptButton.introjs-showElement {
+    border: 1px solid #4e9cdc;
+    background: #4e9cdc;
+}
+
+#viewResult.introjs-showElement {
+    border: 1px solid #4e9cdc;
+    background: #4e9cdc;
+    color: #fff;
+}
+
+
+/* end */
+
+.introjs-helperNumberLayer {
+    display: none;
+}
+
+
+/* tour end */
+
+
+/* tour for dashobard */
+
+.intro-head-home {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0px;
+}
+
+.intro-fixed-body {
+    overflow: hidden;
+}
+
+
+/* tour css end */
+
+@media only screen and (max-width:768px) {
+    /* tour for dashobard */
+    .introjs-fixedTooltip {
+        left: 15px!important;
+        z-index: 9999998!important;
+    }
+    .introjs-tooltipReferenceLayer {
+        z-index: 9999999!important;
+    }
+    .introjs-overlay {
+        z-index: 99996!important;
+    }
+    .side-collapse {
+        z-index: 9999!important;
+    }
+    li#community.introjs-showElement a,
+    li#mytest.introjs-showElement a,
+    li#assignment.introjs-showElement a,
+    li#assignment.introjs-showElement a {
+        color: #000;
+        background: #fff;
+        border-radius: 0;
+        line-height: normal;
+        padding: 18px 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .intro-fixed-body {
+        overflow: hidden;
+    }
+    /* end */
+}
+
+@media only screen and (max-width: 767px) {
+    /* h2.result-heading{display: none;} */
+    .image-cropper input[type=file] {
+        padding: 10px;
+        background: #50a8df;
+        border-radius: 4px;
+        margin: 0 0 12px 0;
+        color: #fff;
+    }
+    #pic-uploader .image-cropper canvas {
+        width: 100%;
+    }
+    .modal-body #uploadform img {
+        width: 50px !important;
+        height: auto !important;
+    }
+    /* tour for dashobard */
+    .introjs-fixedTooltip {
+        left: 15px!important;
+        z-index: 9999998!important
+    }
+    .side-collapse {
+        z-index: 9999!important;
+    }
+    .introjs-tooltipReferenceLayer {
+        z-index: 9999999!important;
+    }
+    .introjs-overlay {
+        z-index: 99996!important;
+    }
+    li#community.introjs-showElement a,
+    li#mytest.introjs-showElement a {
+        color: #000;
+        background: #fff;
+        border-radius: 0;
+        line-height: normal;
+        padding: 18px 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    /* end */
+    .intro-fixed-body {
+        overflow: visible;
+    }
+}
+
+#facebook-jssdk-iframe {
+    display: none;
+}
+
+.cpp-owl-carousel {
+    padding: 0px 20px 0px 30px;
+}
+
+.cpp-owl-carousel .owl-prev {
+    position: absolute;
+    left: 0px;
+    top: -5px;
+    font-size: 30px !important;
+    background: none !important;
+    border: none !important;
+}
+
+.cpp-owl-carousel .owl-prev:hover,
+.cpp-owl-carousel .owl-prev:focus {
+    color: #848484 !important;
+    outline: none !important;
+}
+
+.cpp-owl-carousel .owl-next:hover,
+.cpp-owl-carousel .owl-next:focus {
+    color: #848484 !important;
+    outline: none !important;
+}
+
+.cpp-owl-carousel .owl-next {
+    position: absolute;
+    right: 0px;
+    top: -5px;
+    font-size: 30px !important;
+    background: none !important;
+    border: none !important;
+}
+
+.cpp-owl-carousel .owl-item {
+    min-height: 34px !important;
+}
+
+.cpp-owl-carousel .owl-item a {
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+}
+
+.participate-win .owl-carousel .owl-stage {
+    float: none !important;
+    display: inline-block !important;
+}
+
+
+/* Turn on custom 8px wide scrollbar */
+
+ ::-webkit-scrollbar {
+    width: 8px;
+    /* 1px wider than Lion. */
+    /* This is more usable for users trying to click it. */
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 100px;
+}
+
+
+/* hover effect for both scrollbar area, and scrollbar 'thumb' */
+
+ ::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+
+/* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
+
+ ::-webkit-scrollbar-thumb:vertical {
+    /* This is the EXACT color of Mac OS scrollbars.
+   Yes, I pulled out digital color meter */
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 100px;
+}
+
+ ::-webkit-scrollbar-thumb:vertical:active {
+    background: rgba(0, 0, 0, 0.41);
+    /* Some darker color when you click it */
+    -webkit-border-radius: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+.raphael-group-204-scrollContainer {
+    opacity: 0.54 !important;
+}
+
+.share-relative {
+    position: relative;
+}
+
+
+/*========================================
+Styles For Owl Slider on RTRE Landing page
+==========================================*/
+
+.points-slider .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    right: -85px;
+    padding: 20px;
+    display: block;
+    transform: translate(-100%, -100%);
+    background: url(https://mypat-v2-prod.s3-us-west-2.amazonaws.com/webcontent/web_img/right-arrow.svg);
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.points-slider .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    left: -23px;
+    top: 50%;
+    background-image: url(https://mypat-v2-prod.s3-us-west-2.amazonaws.com/webcontent/web_img/left-arrow.svg);
+    display: block;
+    padding: 0 .3em;
+    margin: 0;
+    cursor: pointer;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.points-slider .owl-carousel .owl-nav .owl-prev:focus,
+.points-slider .owl-carousel .owl-nav .owl-next:focus {
+    outline: none;
+}
+
+.points-slider .owl-nav .owl-prev span,
+.points-slider .owl-nav .owl-next span {
+    visibility: hidden;
+}
+
+.points-slider .owl-theme .owl-dots .owl-dot.active span {
+    background-color: rgba(29, 125, 234, 0.8);
+}
+
+.points-slider .owl-theme .owl-dots .owl-dot span {
+    border: 1px solid #4A97EE;
+    background: initial
+}
+
+.points-slider .owl-theme .owl-dots .owl-dot:focus {
+    outline: none;
+}
+
+.points-slider .owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: initial;
+}
+
+@media (max-width: 768px) {
+    .points-slider .owl-theme .owl-nav {
+        display: none;
+    }
+}
+
+
+/*******Css for custom carousel for goals**********/
+
+.goals.owl-carousel .owl-stage-outer {
+    padding-right: 55px !important;
+}
+
+.goals.owl-carousel .owl-nav {
+    width: 120px;
+    position: absolute;
+    right: -39px;
+    top: -12px;
+    padding: 12px;
+    z-index: 9;
+}
+
+.goals.owl-carousel .owl-nav::before {
+    width: 120px;
+    height: 60px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.goals.owl-carousel .owl-nav button.owl-next,
+.goals.owl-carousel .owl-nav button.owl-prev {
+    background: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    text-align: center;
+    border: solid 1px #BEBEBE;
+}
+
+.goals.owl-carousel .owl-nav button.owl-next:focus,
+.goals.owl-carousel .owl-nav button.owl-prev:focus {
+    outline: none;
+}
+
+.goals.owl-carousel .owl-nav button.owl-next.disabled,
+.goals.owl-carousel .owl-nav button.owl-prev.disabled {
+    opacity: 0.6;
+}
+
+.goals.owl-carousel .owl-nav button.owl-prev {
+    margin-right: 12px;
+}
+
+.goals.owl-carousel .owl-nav button.owl-next span,
+.goals.owl-carousel .owl-nav button.owl-prev span {
+    color: #BEBEBE;
+    font-size: 40px;
+    line-height: 28px;
+    display: inline-block;
+}
+
+.share-relative {
+    position: relative;
+}
+
+.tooltip .tooltip-inner {
+    font-family: "Nunito", sans-serif !important;
+}
+
+.greybgclass {
+    background: #f2f2f2;
+}
+
+
+/* New home page Student qualified stage students list carousel */
+
+.toppers-list .owl-next,
+.topper-first .owl-next {
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+
+.toppers-list .owl-nav .owl-prev,
+.topper-first .owl-nav .owl-prev {
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+.toppers-list .owl-nav .owl-next span,
+.toppers-list .owl-nav .owl-prev span,
+.topper-first .owl-nav .owl-next span,
+.topper-first .owl-nav .owl-prev span {
+    font-size: 44px;
+    color: #9a9fa5;
+}
+
+.topper-first .item,
+.topper-first .item {
+    margin: 3px;
+}
+
+.topper-first .item img,
+.topper-first .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

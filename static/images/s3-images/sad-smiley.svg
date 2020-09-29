@@ -1,0 +1,16 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="50" cy="50" r="50" fill="#EEF2F9"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+<circle cx="50" cy="50" r="50" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<rect x="17.1134" y="22.5683" width="66.0144" height="80.6121" rx="5.25" fill="#F9FAFE" stroke="#707791" stroke-width="1.5"/>
+<rect x="20.0453" y="25.0455" width="60.3636" height="75.8182" fill="white" stroke="#707791"/>
+<path d="M59.6097 43.6364C59.7085 45.1177 60.7355 48.0212 64.0538 47.7842" stroke="#707791" stroke-width="2" stroke-linecap="round"/>
+<path d="M40.3525 43.6364C40.2537 45.1177 39.2267 48.0212 35.9084 47.7842" stroke="#707791" stroke-width="2" stroke-linecap="round"/>
+<path d="M46.9378 62.6327C48.0465 61.6454 50.8142 60.2944 53.0148 62.7892" stroke="#707791" stroke-width="2" stroke-linecap="round"/>
+<circle cx="40.6696" cy="53.1171" r="2.0739" fill="#707791"/>
+<path d="M61.6644 53.1171C61.6644 54.2624 60.7359 55.191 59.5905 55.191C58.4451 55.191 57.5166 54.2624 57.5166 53.1171C57.5166 51.9717 58.4451 51.0432 59.5905 51.0432C60.7359 51.0432 61.6644 51.9717 61.6644 53.1171Z" fill="#707791"/>
+<rect x="33.7971" y="19.0909" width="32.8448" height="9.09091" rx="4.54545" fill="#707791"/>
+</g>
+</svg>
