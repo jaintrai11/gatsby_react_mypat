@@ -7,6 +7,9 @@ html {
 body {
   margin: 0;
   font-family: normal 16px/24px Nunito,sans-serif !important;
+  font: normal 16px/24px Nunito,sans-serif;
+  color: rgb(74 74 74);
+  background: rgb(255 255 255);
 }
 article,
 aside,

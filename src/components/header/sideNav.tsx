@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Navbar, Nav, NavDropdown, Card, Button } from 'react-bootstrap'
-import HeaderBanner from "../headerBanner"
 import './header.css'
 
 interface Props {
@@ -13,7 +12,8 @@ const SideNav: React.FC<Props> = ({ showSideNav }) => (
             <Card.Header>
                 <div className="side-nav-header">
                     <span className="logo">
-                    <img alt="..." className="hidden-lg img-width" src="https://mypat.in/assets/img/s3-images/responsive-bg.svg" width="100%" />
+                    <img alt="..." className="hidden-lg img-width"
+                     src="https://mypat.in//assets/img/s3-images/logo-mypat2.png" width="72" />
                     </span>
                     <div className="action-buttons">
                         <Button variant="primary" bsPrefix="login">
@@ -25,10 +25,25 @@ const SideNav: React.FC<Props> = ({ showSideNav }) => (
                     </div>
                 </div>
             </Card.Header>
-            <Card.Body>
+            <Card.Body className="pt-5 pb-0">
                 <Nav className="flex-column" >
-                    <Nav.Link>Courses</Nav.Link>
-                    <NavDropdown bsPrefix="header-link" title="MyExams" id="basic-nav-dropdown">
+                    <Nav.Link bsPrefix="responsive-menu-item">
+                    <span className="mr-2 visible-xs visible-sm">
+                        <img alt="Courses" src="https://mypat.in/assets/img/s3-images/header-menu/courses.svg" />
+                    </span>
+                        Courses
+                    </Nav.Link>
+                    <NavDropdown bsPrefix="responsive-menu-item" 
+                    title={
+                        <>
+                        <span className="mr-2 visible-xs visible-sm">
+                            <img alt="Courses" 
+                            src="https://mypat.in/assets/img/s3-images/header-menu/exam.svg" />
+                        </span>
+                        <p>MyExams</p>
+                        </>
+                    } 
+                    id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">JEE Main</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">JEE Advanced</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">BITSAT</NavDropdown.Item>
@@ -36,7 +51,17 @@ const SideNav: React.FC<Props> = ({ showSideNav }) => (
                         <NavDropdown.Item href="#action/3.4">KVPY</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.4">Other</NavDropdown.Item>
                     </NavDropdown>
-                    <NavDropdown bsPrefix="header-link" title="Resources" id="basic-nav-dropdown">
+                    <NavDropdown bsPrefix="responsive-menu-item"
+                        title={
+                            <>
+                            <span className="mr-2 visible-xs visible-sm">
+                                <img alt="Courses" 
+                                src="https://mypat.in/assets/img/s3-images/header-menu/resource.svg" />
+                            </span>
+                            <p>Resources</p>
+                            </>
+                        } 
+                     id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Blog</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Webinar</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">PREVIOUS YEAR PAPERS</NavDropdown.Item>
@@ -55,8 +80,29 @@ const SideNav: React.FC<Props> = ({ showSideNav }) => (
 
                         <NavDropdown.Item href="#action/3.4">Other</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link bsPrefix="header-link" href="#community">Community</Nav.Link>
-                    <Nav.Link bsPrefix="header-link" href="#refer">Refer & Earn</Nav.Link>
+                    
+                    <NavDropdown bsPrefix="responsive-menu-item"
+                        title={
+                            <>
+                            <span className="mr-2 visible-xs visible-sm">
+                                <img alt="Community" 
+                                src="https://mypat.in/assets/img/s3-images/header-menu/community.svg" />
+                            </span>
+                            <p>Community</p>
+                            </>
+                        } 
+                     id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#feed">My Feed</NavDropdown.Item>
+                        <NavDropdown.Item href="#questions">My Questions</NavDropdown.Item>
+                        <NavDropdown.Item href="#answer">My Answers</NavDropdown.Item>
+                    </NavDropdown>
+                    <Nav.Link bsPrefix="responsive-menu-item" href="#refer">
+                        <span className="mr-2 visible-xs visible-sm">
+                            <img alt="refer" 
+                            src="https://mypat.in/assets/img/s3-images/header-menu/earn.svg" />
+                        </span>
+                        Refer & Earn
+                    </Nav.Link>
                 </Nav>
             </Card.Body>
             <Card.Footer>

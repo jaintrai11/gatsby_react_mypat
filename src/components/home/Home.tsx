@@ -1,10 +1,12 @@
 
 import React from "react"
-import { Container, Row, Jumbotron, Col, Card, ListGroup, Nav, Tabs, Tab, Carousel } from 'react-bootstrap'
+import { Container, Row, Jumbotron, Col, Card, ListGroup, Nav, Tabs, Tab, Carousel, Form, Button } from 'react-bootstrap'
 import OurResult from "../ourResult/ourResult";
 
 import './home.css'
 import Slider from "react-slick";
+import HeaderBanner from "../header/headerBanner";
+import Footer from "../footer/footer";
 
 const settings = {
     dots: false,
@@ -17,9 +19,10 @@ const settings = {
         breakpoint: 600,
         settings: {
             slidesToShow: 2,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
             arrows: false,
             infinite: true,
+            dots: true
         }
     },
     {
@@ -60,8 +63,15 @@ const ourResult = () => {
 
 const Home: React.FC<Props> = ({ siteTitle }) => (
     <>
+    
+    <section className="main-banner">
+        <HeaderBanner siteTitle="header carousel" />
+    </section>  
+      
         <section className="feature-banner">
             <Container>
+                <Row>
+                    <Col md={12}>
                 <Slider {...settings}>
                     <div>
                         <Container className="media text-center">
@@ -70,13 +80,13 @@ const Home: React.FC<Props> = ({ siteTitle }) => (
                                     <img
                                         width={64}
                                         height={64}
-                                        className="mr-3"
+                                        
                                         src="https://mypat.in/assets/img/s3-images/content-partner.svg"
                                         alt="Generic placeholder"
                                     />
                                 </Col>
                                 <Col sm={12} md={9}>
-                                    <p>Content Partner</p>
+                                    <p className="mt-4">Content Partner</p>
                                 </Col>
                             </Row>
                         </Container>
@@ -90,7 +100,7 @@ const Home: React.FC<Props> = ({ siteTitle }) => (
                                     <img
                                         width={64}
                                         height={64}
-                                        className="mr-3"
+                                        
                                         src="https://mypat.in/assets/img/s3-images/test-analysis.svg"
                                         alt="personalied"
                                     />
@@ -109,7 +119,7 @@ const Home: React.FC<Props> = ({ siteTitle }) => (
                                     <img
                                         width={64}
                                         height={64}
-                                        className="mr-3"
+                                        
                                         src="https://mypat.in/assets/img/s3-images/concept-preparation.svg"
                                         alt="Generic placeholder"
                                     />
@@ -122,10 +132,13 @@ const Home: React.FC<Props> = ({ siteTitle }) => (
                     </div>
 
                 </Slider>
+                </Col>
+                </Row>
             </Container>
         </section>
 
-        <Container className="text-center">
+        <section>
+            <Container className="text-center">
             <Row>
                 <Col sm={12} md={12}>
                     <div className="meet-our-toppers">
@@ -147,7 +160,9 @@ const Home: React.FC<Props> = ({ siteTitle }) => (
                 </Col>
             </Row>
         </Container>
+        </section>
 
+        {/* <section>
         <Jumbotron fluid={true} className="score-banner">
             <Container fluid={true}>
                 <h3>
@@ -165,7 +180,10 @@ const Home: React.FC<Props> = ({ siteTitle }) => (
 
             </Container>
         </Jumbotron>
+        </section> */}
+        
         {/* Start Our Result */}
+        {/* <section>
         <Container className="text-center">
             <div className="text-md margin-md">Our Results</div>
 
@@ -186,10 +204,11 @@ const Home: React.FC<Props> = ({ siteTitle }) => (
                 </Tabs>
             </span>
         </Container>
+        </section> */}
         {/* End Our Result */}
 
         {/*Start Students data card */}
-        <section className="top-student">
+        {/* <section className="top-student">
             <Container fluid={false}>
                 <Row>
                     <Col sm={12} md={6}>
@@ -211,15 +230,15 @@ const Home: React.FC<Props> = ({ siteTitle }) => (
                     </Col>
                 </Row>
             </Container>
-        </section>
+        </section> */}
         {/*End Students data card */}
 
         {/* Student count card */}
-        <section className="student-count-card">
+        {/* <section className="student-count-card">
             <Container className="text-center">
                 <Row>
                     <Col xs={4} sm={4} md={4}>
-                        <Card className="st-border-right">
+                        <Card bsPrefix="st-border-right">
                             <Card.Body>
                                 <Card.Title>144</Card.Title>
                                 <Card.Text>Students in Top 10 AIR</Card.Text>
@@ -228,7 +247,7 @@ const Home: React.FC<Props> = ({ siteTitle }) => (
                     </Col>
 
                     <Col xs={4} sm={4} md={4}>
-                        <Card>
+                        <Card bsPrefix="st-border">
                             <Card.Body>
                                 <Card.Title>904</Card.Title>
                                 <Card.Text>Students in Top 1000 AIR</Card.Text>
@@ -237,7 +256,7 @@ const Home: React.FC<Props> = ({ siteTitle }) => (
                     </Col>
 
                     <Col xs={4} sm={4} md={4}>
-                        <Card className="st-border-left">
+                        <Card bsPrefix="st-border-left">
                             <Card.Body>
                                 <Card.Title>3000</Card.Title>
                                 <Card.Text>Total Selection</Card.Text>
@@ -246,7 +265,7 @@ const Home: React.FC<Props> = ({ siteTitle }) => (
                     </Col>
                 </Row>
             </Container>
-        </section>
+        </section> */}
         {/* End Student count card */}
 
         {/* what student say */}
@@ -375,6 +394,182 @@ const Home: React.FC<Props> = ({ siteTitle }) => (
             </Container>
         </section>
          {/*End what student say */}
+
+         {/* How do we ensure  */}
+        <section className="home-success-container">
+        <Container>
+            <div className="home-success-header text-center mx-auto">
+                <h2 className="title mb-4">
+                How Do We Ensure Success?
+                </h2>
+                <p className="mx-auto para">
+                Whether you’re halfway through your preparation or 
+                starting from scratch, personalised learning in the real
+                test environment helps you identify weaknesses, 
+                builds exam readiness and boosts overall test performance.
+                </p>
+            </div>
+            <Row>
+                <Col sm={{span: 12, order: 1}} md={{span: 5, order: 12}}>
+                    <div className="details">
+                        <span className="icon">
+                            <img src="" alt="success-icon" /></span>
+                        <h2>Set Your Goal</h2>
+                    
+                    <p>
+                    Once you’ve given your first test, 
+                    tell us what you want to achieve.
+                     We’ll share customized tests and exam 
+                    resources according to your current progress and target exam.
+                    </p>
+                    </div>
+                </Col>
+                <Col sm={{span: 12, order: 12 }} md={{span: 7, order: 1}}>
+                    <div className="">
+                        <img width="100%" height="100%" src="https://mypat.in/assets/img/s3-images/img_1.png" alt="success" />
+                    </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col sm={12} md={5}>
+                    <div className="details">
+                        <span className="icon">
+
+                        </span>
+                        <h2>Take Test</h2>                    
+                    <p>
+                    Attempt test of your target exam(s) in the Real Test Environment – same screen, test paper format and marking scheme.
+                    </p>
+                    </div>
+                </Col>
+
+                <Col sm={12} md={7}>
+                    <div className="">
+                        <img width="100%" height="100%" src="https://mypat.in/assets/img/s3-images/img_2.png" alt="test" />
+                    </div>
+                </Col>
+            </Row>
+
+            <Row>
+                <Col sm={{span: 12, order: 1 }} md={{span: 5, order: 12 }}>
+                    <div className="details">
+                        <span className="icon">
+                            <img src="" alt="success-icon" /></span>
+                        <h2>Personalised Dashboard</h2>
+                   
+                    <p>
+                    Track your goal completion progress, concept mastery and detailed test performance metrics at one place.
+                    </p>
+                    </div>
+                </Col>
+                <Col sm={{span: 12, order: 12 }} md={{span: 7, order: 1 }}>
+                    <div className="">
+                        <img width="100%" height="100%" src="https://mypat.in/assets/img/s3-images/img_3.png" alt="exam" />
+                    </div>
+                </Col>
+            </Row>
+                
+                <Row>
+                <Col sm={12} md={5}>
+                    <div className="details">
+                        <span className="icon">
+                        </span>
+                        <h2>myPAT Community</h2>
+                   
+                    <p>
+                    An interactive student-teacher community to ask and answer questions, initiate discussions and share ideas.
+                    </p>
+                    </div>
+                </Col>
+
+                <Col sm={12} md={7}>
+                    <div className="">
+                        <img src="https://mypat.in/assets/img/s3-images/img_5.png" width="100%" height="100%" alt="community" />
+                    </div>
+                </Col>
+                </Row>
+        </Container>
+        </section>
+
+        {/* End ensure success section */}
+
+        {/* Get in android app section */}
+        <section className="get-in-container">
+            <Container>
+                <Row>
+                    <Col sm={12} md={7}>
+                        <div className="get-in-description">
+                            <h1>
+                            PREPARE ANYTIME, ANYWHERE
+                            </h1>
+
+                            <ListGroup horizontal className="mx-auto">
+                                <ListGroup.Item>JEE ADVANCED</ListGroup.Item>
+                                <ListGroup.Item>JEE MAIN</ListGroup.Item>
+                                <ListGroup.Item>BITSAT</ListGroup.Item>
+                                <ListGroup.Item>NTSE</ListGroup.Item>
+                                <ListGroup.Item>KVPY</ListGroup.Item>
+                            </ListGroup>
+
+                            <p>
+                            You wished. We heard. myPAT App live now.
+                            </p>
+
+                            <div className="button">
+                                <Nav.Link className="mr-auto mb-3 pl-0" href="https://play.google.com/store/apps/details?id=com.mypat">
+                                    <img src="https://mypat.in/assets/img/s3-images/android-ico.png" alt="get_in_button" />
+                                </Nav.Link>
+                            </div>
+                            <div className="get-app-form">
+                                <Form>
+                                    <Row>
+                                        <Col>
+                                            <Form.Control className="mobile-text-field" type="text" placeholder="Enter your mobile number" />
+                                        </Col>
+                                        <Col>
+                                            <div className="get-app-button">
+                                            <Button variant="primary" type="submit">
+                                                Get App
+                                            </Button>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </Form>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col sm={12} md={5}>
+                        <div className="mobile-image">
+                            <img width="100%" height="100%" src="https://mypat.in/assets/img/s3-images/m-phone.png" alt="mobile" />
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+        {/* End Get in android app section */}
+
+        {/* Start News Letter */}
+        <section className="news-letter">
+            <Container>
+            <div className="news-letter-form">
+                <Form inline>
+                    <Form.Group>
+                        <Form.Label>Connect with us</Form.Label>                      
+                        <Form.Control className="mobile-text-field" type="text" placeholder="Enter your mobile number" />
+                    </Form.Group>
+                    <Button className="subscribe-button" variant="primary" type="submit" disabled={true}>
+                        Subscribe
+                    </Button>
+                </Form>
+            </div>
+            </Container>
+        </section>
+        {/* End News Letter */}
+        
+        {/* footer start */}
+        <Footer eventKey="0" />
+        {/* End footer */}
+
     </>
 );
 

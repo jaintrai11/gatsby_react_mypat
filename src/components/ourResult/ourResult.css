@@ -1,8 +1,8 @@
-.card {
+.our-result .card {
     border: solid 1px rgb(0 0 0 / 0%);
 }
 
-.card-body img{
+.our-result .card-body img{
     height: 200px;
     cursor: pointer;
     border: 2px solid rgb(255 255 255);

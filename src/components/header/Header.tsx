@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container, ListGroup } from 'react-bootstrap'
-import HeaderBanner from "../headerBanner"
+import HeaderBanner from "./headerBanner"
 import './header.css'
 import SideNav from "./sideNav"
 
@@ -18,12 +18,12 @@ const Header: React.FC<Props> = ({ siteTitle }) => {
   <section className="header-container">
     <Container>    
       <div className={showSidenav ? 'side-nav-overlay' : ''} 
-      onClick={e => setSidenav(false)}>        
+      onClick={e => setSidenav(!showSidenav)}>        
       </div>
 
       {showSidenav && <SideNav /> }
 
-    <Navbar expand="lg">    
+    <Navbar expand="xl">    
       <Navbar.Brand href="#home"> 
           <Navbar.Toggle onClick={e => setSidenav(!showSidenav)}>
           <span className="icon-bar"></span>
@@ -80,13 +80,6 @@ const Header: React.FC<Props> = ({ siteTitle }) => {
     </Container>
     </section>
 
-    <section className="main-banner">
-    <img alt="..." className="hidden-lg img-width" 
-    src="https://mypat.in/assets/img/s3-images/responsive-bg.svg" 
-    width="100%" />
-
-      <HeaderBanner siteTitle="header carousel" />
-    </section>    
   </>
   )
 }

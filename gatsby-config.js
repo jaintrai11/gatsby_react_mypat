@@ -1,35 +1,43 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter TypeScript`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@andykenward`,
+    title: 'mypat',
+    description: 'mypat',
+    author: 'mypat'
   },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
+  plugins: [    
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-remote-images`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        nodeType: 'MyNodes',
+        imagePath: 'static'
+      }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-source-strapi',
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
+        apiURL: 'http://localhost:1337',
+        contentTypes: [
+          // List of the Content Types you want to be able to request from Gatsby.
+          'article',
+          'user'
+        ],
+        queryLimit: 1000
+      }
     },
-    `gatsby-plugin-extract-schema`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ],
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        // Available options and their defaults:
+        base64Width: 20,
+        forceBase64Format: ``, // valid formats: png,jpg,webp
+        useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
+        stripMetadata: true,
+        defaultQuality: 50
+      }
+    },
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-react-helmet',
+  ]
 }

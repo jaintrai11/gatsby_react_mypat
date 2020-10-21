@@ -39,7 +39,7 @@ interface Props {
 
 const OurResult: React.FC<Props> = ({ siteTitle }) => (
     <>
-        <Container>
+        <Container className="our-result">
             <Slider {...settings}>
                 <div>
                     <Card className="text-center slick-card">

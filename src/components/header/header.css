@@ -10,7 +10,7 @@
 }
 
 .header-nav .dropdown-menu[style] {
-    margin: 26px 0px !important; 
+    margin: 24px 0px !important; 
     /* @TODO We need to figure out why it later */
     border-radius: 5px!important;
     min-width: 220px;
@@ -46,8 +46,10 @@
 .header-container {
     box-shadow: 0 2px 10px 5px rgba(0,0,0,.08);
     position: fixed;
-    width: 100%;
-    z-index: 9;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 999;
     background: rgb(255 255 255);
 }
 
@@ -59,8 +61,70 @@
     margin-left: 8%;
 }
 
+
+.main-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.main-banner h1 {
+    color: rgb(51 51 51);
+    opacity: 1;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 61px;
+    text-transform: capitalize;
+}
+
+.main-banner>:nth-child(2) {
+    margin: 180px 0px 30px; 
+}
+
+.main-banner p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgb(51 51 51);
+    margin-top: 8px;
+}
+
+.header-banner-image img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 34px;
+}
+
+.main-banner::before {
+    content: url(https://mypat.in/assets/img/s3-images/junelaptop-bg.svg);
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+
+.main-banner .exam {
+    padding-left: 0;
+    margin: 30px auto;
+}
+
+.main-banner .exam li {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgb(51 51 51);
+    padding-right: 15px;
+}
+
 .navbar-nav {
     text-transform: uppercase;
+}
+
+.header-container .navbar {
+    padding: 6px 2px;
 }
 
 .header-link, .header-link:hover {
@@ -77,18 +141,31 @@
 .login-primary:focus {
     background: rgb(29 125 234);
     color: rgb(255 255 255);
-    margin-right: 10px;
+    margin-right: 12px;
     border: 1px solid rgb(29 125 234);
     font-weight: 700;
-    padding: 7px 14px;
+    padding: 7px 31px;
     border-radius: 4px;
     font-size: 14px;
     outline: solid transparent;
 }
+    
+.mainBanner-form .orangeButton {
+    color: rgb(255 255 255);
+    background: rgb(255 111 1);
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px 17px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 0;
+    letter-spacing: .23835px;
+    text-transform: uppercase;
+}
 
 .signup-outline-primary, 
 .signup-outline-primary:focus {
-    padding: 7px 14px;
+    padding: 7px 31px;
     border: 1px solid rgb(29 125 234);
     font-weight: 700;
     background: #fff;    
@@ -96,6 +173,26 @@
     color: rgb(29 125 234);
     font-size: 14px;
     outline: solid transparent;
+}
+
+.side-panel, .side-nav-overlay {
+    display: none;
+}
+
+.verticleSlider {
+    position: relative;
+    width: 100%;
+    float: left;
+    height: 142px;
+    overflow: hidden;
+}
+
+.verticleSlider .slick-list {
+    height: 140px
+}
+
+.responsive-background {
+    display: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -107,6 +204,10 @@
         font-size: 12px;
         font-weight: 600;
     }
+
+    .login-primary, .signup-outline-primary {
+        padding: 7px 14px;
+    }
     
     .download-btn {
         background: rgb(29 125 234);
@@ -114,26 +215,6 @@
         margin-right: 10px;
         border: 1px solid rgb(29 125 234);
         width: 100%;
-    }
-
-    .side-panel .navbar {
-        padding: 0px;
-    }
-
-    .side-panel .card-body {
-        height: 76%;
-    }
-
-    .side-panel .card-header {
-        padding: 21px 11px 21px 20px;
-        background: rgb(255 255 255)
-    }
-
-    .side-panel .card-footer {
-        padding: .75rem 1.25rem;
-        background-color: #fff;
-        border-top: 1px solid transparent;
-        text-align: center;
     }
 
     .icon-bar {
@@ -145,13 +226,50 @@
         margin-top: 3px;
         margin-bottom: 4px;
     }
+    
+    .responsive-background {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+    }
+
+    .main-banner h1 {
+        font-size: 26px;
+        line-height: 46px;
+    }
+
+    .mainBanner-form .form-control {
+        height: calc(1.5em + .75rem + 15px);
+        font-size: 10px;
+    }
+
+    .mainBanner-form .orangeButton {
+        font-size: 12px;
+        padding: 15px 17px;
+    }
+    .main-banner::before {
+        opacity: 0;
+    }
+
+    .header-container {
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.34);
+    }
+
+    .header-banner-image {
+        display: none;
+    } 
+    .main-banner>:nth-child(2) { 
+        text-align:center !important;         
+        margin: 94px 0px 50px;
+    }
 
     .navbar-collapse {
         display: none;
         padding: 0px 10px;
     }
 
-    .navbar.navbar-expand-lg {
+    .navbar.navbar-expand-xl {
         padding: 0px;
     }
 
@@ -163,6 +281,25 @@
         outline: 0px auto -webkit-focus-ring-color;
     }
 
+    .responsive-menu-item, .responsive-menu-item:hover {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        color: rgb(118 118 118);
+        font-weight: 400;
+        font-size: 16px;
+        padding: 10px 0px 0px 14px;
+        height: 50px;
+        text-decoration: transparent;
+    }
+
+    .responsive-menu-item.dropdown-toggle::after {
+        transform: rotate(270deg);
+        left: -8px;
+        position: absolute;
+        top: 20px;
+    }
+
     .side-nav-overlay {
         position: fixed;
         top: 0px;
@@ -171,10 +308,10 @@
         background: rgb(0 0 0 / 90%);
         z-index: 9;
         right: 0px;
+        display: block;
     }
 
     .side-panel {
-        overflow: auto;
         position: fixed;
         top: 0px;
         z-index: 9;
@@ -185,6 +322,12 @@
         width: 282px;
         transition: width .4s;
         transition: all .5s ease;
+        display: block;
+    }
+
+    .side-panel .dropdown-menu {
+        border: 1px solid transparent;
+        border-radius: .25rem;
     }
 
     .side-panel .side-nav-header {
@@ -193,29 +336,123 @@
         align-items: center;
         flex-direction: row;
     }
+
+    
+    .side-panel .dropdown.show .dropdown-menu {
+        position: relative !important;
+        transform: translate(0px, -15px) !important;
+        padding-left: 44px;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .side-panel .dropdown-menu a,
+    .side-panel .dropdown-item:active {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: rgb(118 118 118);
+        font-size: 14px;
+        padding: 6px 15px;
+        background-color: rgb(0 0 0 / 0%);
+    }
+
+    .side-panel .dropdown-item.active {
+        background-color: rgb(248 249 250);
+    }
+
+    .side-panel .dropdown a[aria-expanded="true"] {
+        font-weight: 700;
+        color: rgb(118 118 118);
+    }
+
+    .side-panel .dropdown a[aria-expanded="true"]::after {
+        transform: rotate(0deg);
+    }
+
+    .side-panel .navbar {
+        padding: 0px;
+    }
+
+    .side-panel .card-body {
+        height: 80%;        
+        overflow: auto;
+    }
+
+    .side-panel .card-header {
+        padding: 21px 11px 21px 20px;
+        background: rgb(255 255 255)
+    }
+
+    .side-panel .card-footer {
+        padding: .75rem 1.25rem;
+        background-color: rgb(255 255 255);
+        border-top: 1px solid rgb(0 0 0 / 0%);
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    .verticleSlider {
+        width: auto;
+        height: 90px;
+    }
+
+    .main-banner p {
+        letter-spacing: .357525px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .main-banner {
+        padding: 60px 0px 250px;
+        text-align: center;
+    }
+
+    .main-banner .caption {
+        position: absolute;
+        top: 160px;
+        bottom: auto;
+    }
+
+    .main-banner .caption strong {
+        color: rgb(29 125 234);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .action-buttons .signup-outline-primary.signup{
+        display: inline-block;
+    }
+
+    .mainBanner-form .form-control {
+        height: calc(1.5em + .75rem + 15px);
+        font-size: 10px;
+    }
+
+    .signup-outline-primary.signup {
+        display: none;
+    }
+
+    .verticleSlider {
+        width: auto;
+        height: 60px;
+    }
+
+    .main-banner p {
+        letter-spacing: .357525px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .main-banner {
+        padding: 100px 0px 80px;
+    }
 }
 
 .header-link>:first-child {
     margin-top: 12px
 }
-/* 
-.header-link::after,
-.header-link::before {
-    content:"";
-    border-style:solid;
-    border-width:10px;
-    width:0;
-    height:0;
-    position:absolute;
-    top:100%;
-    left:20px;
-}
-
-.header-link::before {
-    border-color: #000 transparent transparent;
-}
-
-.header-link::after {
-    margin-top: -2px;
-    border-color: #fff transparent transparent;
-} */
